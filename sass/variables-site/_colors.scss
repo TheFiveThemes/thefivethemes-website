@@ -10,20 +10,28 @@ $color__strawberryrealness: #e56363;
 
 // Color Applications
 
+$color__text-main: rgba($color__deephouse,0.5);
+
 $color__background-body: #fff;
 $color__background-screen: #fff;
-$color__background-hr: #ccc;
+
+$color__background-hr: $color__silverclouds-light;
+
 $color__background-button: #e6e6e6;
-$color__background-pre: #eee;
+$color__background-pre: rgba($color__silverclouds-light,0.8);
 $color__background-ins: #fff9c0;
 
 $color__text-screen: $color__silverclouds;
-$color__text-input: $color__deephouse;
-$color__text-input-focus: $color__deephouse;
+
+$color__text-input: rgba($color__deephouse,0.5);
+$color__text-input-focus: rgba($color__deephouse,0.7);
+
 $color__link: $color__boujieseafoam;
 $color__link-visited: $color__boujieseafoam-light;
 $color__link-hover: $color__strawberryrealness;
-$color__text-main: $color__silverclouds;
+
+
+
 
 
 
