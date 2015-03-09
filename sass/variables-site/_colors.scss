@@ -1,0 +1,35 @@
+// Base Colors
+
+$color__boujieseafoam: #63c7bd;
+$color__boujieseafoam-light: #92d8d1;
+$color__silverclouds: #95a9a9;
+$color__silverclouds-light: #e9eded;
+$color__deephouse: #1d272c;
+$color__strawberryrealness: #e56363;
+
+
+// Color Applications
+
+$color__background-body: #fff;
+$color__background-screen: #fff;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: $color__silverclouds;
+$color__text-input: $color__deephouse;
+$color__text-input-focus: $color__deephouse;
+$color__link: $color__boujieseafoam;
+$color__link-visited: $color__boujieseafoam-light;
+$color__link-hover: $color__strawberryrealness;
+$color__text-main: $color__silverclouds;
+
+
+
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

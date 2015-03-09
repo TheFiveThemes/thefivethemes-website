@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+    text-transform: uppercase;
+    line-height: 1;
+    color: rgba($color__deephouse,.7);
+}
+
+h1 {
+    @include font-size(1.688);
+    letter-spacing: 0.054em;
+}
+
+h2 {
+    @include font-size(1.125);
+    letter-spacing: 0.060em;
+}
+
+h3 {
+    @include font-size(1);
+    letter-spacing: 0.081em;
+}
+
+h4 {
+    @include font-size(0.75);
+    letter-spacing: 0.091em;
+    color: rgba($color__silverclouds,.5);
+}
+
+%heading3 {
+    @include font-size(1);
+    letter-spacing: 0.081em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+%heading4 {
+    @include font-size(0.75);
+    letter-spacing: 0.091em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.grid h1 {
+    margin: 0 0 .1em;
+}
+.grid h4 {
+    margin: 0;
+}
