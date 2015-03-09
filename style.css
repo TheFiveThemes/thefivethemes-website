@@ -455,13 +455,20 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+.site-header a {
+  color: rgba(29, 39, 44, 0.4);
+  text-decoration: none; }
+  .site-header a:hover {
+    color: rgba(29, 39, 44, 0.8); }
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
-  display: block;
-  text-align: center; }
+  width: 100%;
+  text-align: center;
+  content: "";
+  display: table; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -483,11 +490,17 @@ a {
     .main-navigation ul li:hover > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.5em; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    color: rgba(29, 39, 44, 0.5);
+    box-shadow: 0 2px 0 rgba(29, 39, 44, 0.5); }
 
 /* Small menu. */
 .menu-toggle {
@@ -699,26 +712,14 @@ a {
       display: block;
       padding: 2em 0.3em;
       color: rgba(255, 255, 255, 0.7); } }
-.site-header a {
-  color: rgba(29, 39, 44, 0.4);
-  text-decoration: none; }
-  .site-header a:hover {
-    color: rgba(29, 39, 44, 0.8); }
 .site-header .main-navigation {
   margin-bottom: 6em; }
-  .site-header .main-navigation li {
-    margin: 0 .5em; }
 .site-header .site-about {
   margin-bottom: 4em; }
 .site-header .site-info {
   font-size: 12px;
   font-size: 0.75rem;
   color: rgba(29, 39, 44, 0.3); }
-  .site-header .site-info a {
-    color: rgba(29, 39, 44, 0.4);
-    text-decoration: none; }
-    .site-header .site-info a:hover {
-      color: rgba(29, 39, 44, 0.8); }
 
 /*--------------------------------------------------------------
 10.1 Posts and pages

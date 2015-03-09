@@ -19,3 +19,13 @@ a {
 		outline: 0;
 	}
 } 
+
+.site-header {
+	a {
+        color: rgba($color__deephouse,.4);
+        text-decoration: none;
+        &:hover {
+            color: rgba($color__deephouse,.8);
+        }
+    }
+}
