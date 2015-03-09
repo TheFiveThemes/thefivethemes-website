@@ -29,3 +29,16 @@ a {
         }
     }
 }
+
+.entry-title a {
+    color: rgba($color__deephouse,.7);
+    text-decoration: none;
+    &:hover {
+        color: $color__link-hover;
+    }
+}
+
+.entry-meta a, 
+.entry-footer a {
+    text-decoration: none;
+}

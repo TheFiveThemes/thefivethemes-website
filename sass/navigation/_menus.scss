@@ -59,11 +59,13 @@
 		text-decoration: none;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-		color: rgba($color__deephouse,.5);
-		box-shadow: 0 2px 0 rgba($color__deephouse,.5);
+	.current_page_item,
+	.current-menu-item,
+	.current_page_ancestor {
+		box-shadow: 0 2px 0 rgba($color__deephouse,.3);
+		& > a {
+			color: rgba($color__deephouse,.5);
+		}
 	}
 }
 

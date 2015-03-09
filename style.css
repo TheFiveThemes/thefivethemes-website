@@ -461,6 +461,16 @@ a {
   .site-header a:hover {
     color: rgba(29, 39, 44, 0.8); }
 
+.entry-title a {
+  color: rgba(29, 39, 44, 0.7);
+  text-decoration: none; }
+  .entry-title a:hover {
+    color: #e56363; }
+
+.entry-meta a,
+.entry-footer a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
@@ -496,11 +506,14 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
-  .main-navigation .current_page_item > a,
-  .main-navigation .current-menu-item > a,
-  .main-navigation .current_page_ancestor > a {
-    color: rgba(29, 39, 44, 0.5);
-    box-shadow: 0 2px 0 rgba(29, 39, 44, 0.5); }
+  .main-navigation .current_page_item,
+  .main-navigation .current-menu-item,
+  .main-navigation .current_page_ancestor {
+    box-shadow: 0 2px 0 rgba(29, 39, 44, 0.3); }
+    .main-navigation .current_page_item > a,
+    .main-navigation .current-menu-item > a,
+    .main-navigation .current_page_ancestor > a {
+      color: rgba(29, 39, 44, 0.5); }
 
 /* Small menu. */
 .menu-toggle {
@@ -644,7 +657,6 @@ a {
   z-index: 10; }
 
 .site-header {
-  background: #63c7bd;
   padding: 3em;
   z-index: 10; }
   .site-header .site-branding,
