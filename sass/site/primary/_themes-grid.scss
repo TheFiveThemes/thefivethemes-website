@@ -1,0 +1,51 @@
+.themes-grid-item {
+    h1 {
+        margin-bottom: 0;
+    }
+    h2 {
+        @extend %heading4;
+        color: rgba($color__silverclouds,.5);
+    }
+    .entry-wrap {
+        @include clearfix();
+        position: relative;
+        width: 100%;
+    }
+    .entry-content p {
+        margin: 0 0 1em;
+    }
+    .entry-calltoaction {
+        position: absolute;
+        top: 1.2em;
+        right: 0;
+        h3, a {
+            display: inline-block;
+            padding: 0 .8em;
+            margin: 0;
+            line-height: 2;
+            border-radius: 3px;
+            @extend %heading4;
+        }
+        h3 {
+            background: rgba($color__silverclouds,.2);
+            color: rgba($color__deephouse,.3);
+        }
+        @include respondTo(babybear) {
+            position: relative;
+            top: 0;
+            width: 100%;
+            h3 {
+                width: 100%;
+                text-align: center;
+            }
+            a {
+                width: 48%;
+                text-align: center;
+                display: inline-block;
+                &:nth-child(odd) {
+                    margin-right: 2.5%;
+                }
+            }
+        }
+    }
+}

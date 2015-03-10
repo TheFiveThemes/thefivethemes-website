@@ -8,7 +8,7 @@ Template Name: Homepage
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main grid" role="main">
+		<main id="main" class="site-main themes-grid" role="main">
 
 				<?php
 					$child_pages = new WP_Query( array(

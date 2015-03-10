@@ -67,3 +67,13 @@ a {
         color: $color__link-hover;
     }
 }
+
+// Themes Grid
+.themes-grid-item .entry-calltoaction a {
+    background: $color__link;
+    color: rgba($color__deephouse,.8);
+    text-decoration: none;
+    &:hover {
+        background: $color__link-hover;
+    }
+}

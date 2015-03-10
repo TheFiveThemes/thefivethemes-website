@@ -73,10 +73,44 @@ body:before {
     @include respondTo(papabear) {
         width: 70%;
     }
-    .grid {
-        padding: 2em 0;
+    .themes-grid {
+        max-width: 800px;
+        @include clearfix();
+        .themes-grid-item {
+            position: relative;
+            display: block;
+            @include respondTo(babybear) {
+                margin-bottom: 5em;
+            }
+            @include respondTo(papabear) {
+                width: 45%;
+                display: inline-block;
+                vertical-align: top;
+
+                &:nth-child(even) {
+                    margin-right: 10%;
+                }
+                &:first-child {
+                    width: 100%;
+                    float: none;
+                    margin-right: 0;
+                    .entry-header {
+                        width: 25%;
+                        float: left;
+                    }
+                    .entry-content {
+                        width: 50%;
+                        float: left;
+                        margin-top: 0.9em;
+                    }
+                }
+            }
+        }
+        
     }
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -88,6 +122,7 @@ body:before {
 10.1 Posts and pages
 --------------------------------------------------------------*/
 @import "primary/posts-and-pages";
+@import "primary/themes-grid";
 
 /*--------------------------------------------------------------
 10.2 Asides
