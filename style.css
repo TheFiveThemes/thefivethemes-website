@@ -753,7 +753,7 @@ a {
     .site-content {
       width: 70%; } }
   .site-content .themes-grid {
-    max-width: 800px;
+    max-width: 1200px;
     content: "";
     display: table; }
     .site-content .themes-grid .themes-grid-item {
@@ -779,7 +779,7 @@ a {
             .site-content .themes-grid .themes-grid-item:first-child .entry-content {
               width: 50%;
               float: left;
-              margin-top: 0.9em; } }
+              margin-top: 1.2em; } }
 
 /*--------------------------------------------------------------
 10.0.1 Header

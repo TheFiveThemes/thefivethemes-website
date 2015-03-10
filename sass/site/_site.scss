@@ -74,7 +74,7 @@ body:before {
         width: 70%;
     }
     .themes-grid {
-        max-width: 800px;
+        max-width: 1200px;
         @include clearfix();
         .themes-grid-item {
             position: relative;
@@ -101,7 +101,7 @@ body:before {
                     .entry-content {
                         width: 50%;
                         float: left;
-                        margin-top: 0.9em;
+                        margin-top: 1.2em;
                     }
                 }
             }
