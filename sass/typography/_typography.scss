@@ -9,6 +9,10 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+%aside-text {
+    @include font-size(0.75);
+}
+
 @import "headings";
 
 @import "copy";

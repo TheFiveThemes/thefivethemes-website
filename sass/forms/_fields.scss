@@ -7,10 +7,12 @@ textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
 	border-radius: 3px;
-
+    @include transition(all 0.2s ease-in-out);
 	&:focus {
-		color: $color__text-input-focus;
-	}
+        outline: none;
+        box-shadow: 0 0 2px 3px rgba($color__boujieseafoam,.3);
+        @include transition(all 0.2s ease-in-out);
+    }
 }
 
 input[type="text"],

@@ -110,6 +110,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/theme-placeholder.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13285,
+		"inputAbbreviatedPath": "\/images\/theme-placeholder.png",
+		"outputAbbreviatedPath": "\/images\/theme-placeholder.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/custom-header.php": {
 		"fileType": 8192,
 		"ignore": 0,

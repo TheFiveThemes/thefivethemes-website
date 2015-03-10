@@ -2,10 +2,6 @@
 	display: block;
 }
 
-.hentry {
-	margin: 0 0 1.5em;
-}
-
 .byline,
 .updated:not(.published){
 	display: none;
@@ -25,4 +21,49 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+
+.hentry {
+    margin: 1.5em 0;
+    border-bottom: 2px solid rgba($color__silverclouds-light,0.5);
+}
+
+.blog .hentry,
+.archive .hentry {
+    margin-bottom: 5.063em;
+}
+
+.entry-meta,
+.entry-footer {
+    @extend %heading4;
+    color: rgba($color__silverclouds,.5);
+}
+
+.entry-footer {
+    width: 100%;
+    padding: 1.5em 0;
+    @include clearfix();
+    .comments-link {
+        display: block;
+        float: right;
+    }
+    .tags-links {
+        margin-right: 1.5em;
+    }
+}
+
+.post-navigation {
+    .nav-previous:before,
+    .nav-next:before {
+        display: block;
+        @extend %heading4;
+        color: rgba($color__silverclouds,.5);
+    }
+    .nav-previous:before {
+        content: "Previously";
+    }
+    .nav-next:before {
+        content: "Next";
+    }
 }

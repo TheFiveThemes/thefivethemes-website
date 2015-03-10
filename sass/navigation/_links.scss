@@ -42,3 +42,28 @@ a {
 .entry-footer a {
     text-decoration: none;
 }
+
+.entry-meta a,
+.tags-links a {
+    color: rgba($color__silverclouds,.5);
+    &:hover {
+        color: $color__link-hover;
+    }
+}
+
+.comment-author a {
+    color: rgba($color__deephouse,.6);
+    text-decoration: none;
+    &:hover {
+        color: $color__link-hover;
+    }
+}
+
+.comment-metadata a,
+.pingback .edit-link a {
+    color: rgba($color__silverclouds,.5);
+    text-decoration: none;
+    &:hover {
+        color: $color__link-hover;
+    }
+}
