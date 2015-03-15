@@ -35,10 +35,12 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'thefivethemes' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
-
-			<div class="site-about">
-				<p>The Five Themes is an experimental WordPress theme foundry. It was built as part of the senior project class at the Academy of Art University. Instead of trying to build an all-in-one theme, with these five themes I try to address five niche areas in a more targetted way. <a href="/about">Learn more...</a></p>
-			</div><!-- .site-about -->
+			
+			<div class="site-widgets">
+				<?php if ( is_active_sidebar( 'sidebar-1' ) ) {
+					dynamic_sidebar( 'sidebar-1' );
+				}?>
+			</div><!-- .site-widgets -->
 
 			<div class="site-info">
 				<div class="site-info-cms">
