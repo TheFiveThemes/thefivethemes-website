@@ -1,43 +1,142 @@
-// Base Colors
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
 
+// Base Colors
+$color__deephouse: #0f375f;
 $color__boujieseafoam: #63c7bd;
-$color__boujieseafoam-light: #92d8d1;
-$color__silverclouds: #95a9a9;
-$color__silverclouds-light: #e9eded;
-$color__deephouse: #1d272c;
 $color__strawberryrealness: #e56363;
 
+// Color Abstractions
+$color__base: $color__deephouse;
+$color__accent: $color__boujieseafoam;
+$color__highlight: $color__strawberryrealness;
 
-// Color Applications
+// Tints
+$color__base-tint10: tint($color__base,10%);
+$color__base-tint20: tint($color__base,20%);
+$color__base-tint30: tint($color__base,30%);
+$color__base-tint40: tint($color__base,40%);
+$color__base-tint60: tint($color__base,60%);
+$color__base-tint70: tint($color__base,70%);
+$color__base-tint80: tint($color__base,80%);
+$color__base-tint90: tint($color__base,90%);
+$color__base-tint95: tint($color__base,95%);
 
-$color__text-main: rgba($color__deephouse,0.5);
+$color__accent-tint10: tint($color__accent,10%);
+$color__accent-tint20: tint($color__accent,20%);
+$color__accent-tint60: tint($color__accent,60%);
+$color__accent-tint90: tint($color__accent,90%);
+
+$color__highlight-tint20: tint($color__highlight,20%);
+
+// Tones
+$color__accent-mix10: mix($color__base, $color__accent, 10%);
+$color__accent-mix20: mix($color__base, $color__accent, 20%);
+$color__accent-mix30: mix($color__base, $color__accent, 30%);
+$color__accent-mix60: mix($color__base, $color__accent, 60%);
+
+$color__highlight-mix60: mix($color__base, $color__highlight-tint20, 60%);
+
+// Shades
+// ...
+
+
+/*--------------------------------------------------------------
+# Color Applications
+--------------------------------------------------------------*/
+
+// Backgrounds
 
 $color__background-body: #fff;
 $color__background-screen: #fff;
+$color__background-hr: $color__base-tint95;
+$color__background-pre: $color__base-tint95;
+$color__background-ins: $color__base-tint95;
 
-$color__background-hr: $color__silverclouds-light;
-
-$color__background-button: #e6e6e6;
-$color__background-pre: rgba($color__silverclouds-light,0.8);
-$color__background-ins: #fff9c0;
-
-$color__text-screen: $color__silverclouds;
-
-$color__text-input: rgba($color__deephouse,0.5);
-$color__text-input-focus: rgba($color__deephouse,0.7);
-
-$color__link: $color__boujieseafoam;
-$color__link-visited: $color__boujieseafoam-light;
-$color__link-hover: $color__strawberryrealness;
+$color__background-header: $color__accent;
+$color__background-primary: #fff;
+$color__background-secondary: $color__base-tint95;
+$color__background-footer: $color__base-tint40;
+$color__background-404: $color__accent;
+$color__background-archive-header: $color__base-tint90;
+$color__background-homeblock-hover: $color__accent;
+$color__background-feature: #fff;
+$color__background-table-header: rgba($color__base,.05);
 
 
+// Text
+
+$color__text-screen: $color__base-tint20;
+$color__text-input: $color__base-tint40;
+$color__text-input-focus: $color__base-tint20;
+
+$color__text-main: $color__base-tint40;
+
+$color__headings: $color__base-tint40;
+
+$color__text-soft: $color__base-tint60;
+$color__text-softer: $color__base-tint80;
+
+$color__text-secondary: rgba($color__base,.5);
+
+$color__text-footer: rgba(#fff,.5);
+
+
+// Links
+
+$color__link: $color__accent;
+$color__link-visited: $color__accent-tint10;
+$color__link-hover: $color__base;
+
+$color__link-header: rgba($color__base,.6);
+$color__link-header-hover: rgba($color__base,.8);
+
+$color__link-secondary-hover: rgba($color__base,.8);
+
+$color__link-post-title: $color__base-tint40;
+$color__link-post-title-hover: $color__accent;
+
+$color__link-footer: rgba(#fff,.8);
+$color__link-footer-hover: #fff;
+
+$color__sharedaddy-icon: $color__base-tint80;
+$color__sharedaddy-icon-hover: $color__base-tint60;
 
 
 
+$color__asidelink: $color__base-tint60;
+$color__asidelink-hover: $color__accent;
+
+$color__headernavlink: rgba($color__base-tint90,.7);
+$color__headernavlink-hover: #fff;
 
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
+// Forms
+
+$color__background-button: $color__accent;
+$color__background-button-hover: $color__accent-tint20;
+$color__background-button-focus: $color__accent-mix10;
+
+$color__text-button: $color__accent-tint90;
+$color__text-button-hover: #fff;
+$color__textshadow-button-hover: $color__accent-mix20;
+
+$color__border-button: $color__accent $color__accent-mix20 $color__accent-mix20;
+$color__border-button-hover: $color__accent-tint20 $color__accent-tint10 $color__accent-mix10;
+$color__border-button-focus: $color__accent-mix20 $color__accent-mix20 $color__accent-mix20;
+
+$color__outilne-button-focus: $color__accent-tint60;
+$color__outilne-field-focus: $color__base-tint90;
+
+$color__border-input: $color__base-tint80;
+$color__border-abbr: $color__base-tint60;
+
+
+// Others
+$color__border-base: $color__base-tint95;
+$color__border-secondary: rgba($color__base,.3);
+$color__border-sidebar-navigation: $color__base-tint80;
+$color__border-table-row: rgba($color__base,.03);
+
+$color__boxshadow-primary: #000;

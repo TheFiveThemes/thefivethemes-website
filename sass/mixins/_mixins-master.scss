@@ -11,6 +11,8 @@
 	margin-right: auto;
 }
 
+
+
 // Clearfix
 @mixin clearfix() {
 	content: "";
@@ -22,18 +24,11 @@
 	clear: both;
 }
 
-// Breakpoints for each query
-$smartphone: 480px;
-$tablet: 800px;
-$desktop: 1100px;
-@mixin respondTo($media) {
-  @if $media == babybear {
-    @media (max-width: $smartphone) { @content; }
-  }
-  @else if $media == mammabear {
-    @media (min-width: $tablet) { @content; }
-  }
-  @else if $media == papabear {
-    @media (min-width: $desktop) { @content; }
-  }
-}
+
+
+// Media Query Breakpoints Mixin
+@import "breakpoints";
+
+
+// Text Format Mixin
+@import "text-format";

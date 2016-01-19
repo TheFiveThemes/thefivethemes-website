@@ -1,0 +1,77 @@
+// Sharedaddy
+
+.single .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button {
+    background: $color__sharedaddy-icon;
+    color: #fff !important;
+    &:hover {
+        background: $color__sharedaddy-icon-hover;
+    }
+
+    // Transition on mouse-out
+    @include transition-property(color, background, transform, opacity);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.single .sd-social-icon .sd-content ul li[class*='share-'] a:hover, 
+.single .sd-social-icon .sd-content ul li[class*='share-'] div.option a:hover {
+    opacity: 1;
+    @include transform(scale(1.2));
+    z-index: 100;
+
+    @include transition-property(color, background, transform, opacity);
+    @include transition-duration(0.05s);
+    @include transition-timing-function(ease-in-out);
+}
+
+
+// Specific buttons
+
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-facebook a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #3b5998;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-twitter a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #00acee;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-google-plus-1 a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #dd4b39;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-linkedin a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #0077b5;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-press-this a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #1e8cbe;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-tumblr a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #2c4762;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-pinterest a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #ca1f27;
+    }
+}
+.single .sd-social-icon .sd-content ul li[class*='share-'].share-pocket a.sd-button {
+    background: $color__sharedaddy-icon;
+    &:hover {
+        background: #ee4056;
+    }
+}

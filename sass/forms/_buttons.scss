@@ -1,29 +1,40 @@
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	padding: 0.8em 1.5em;
+form {
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		@include text-format(heading-small);
+		color: $color__text-button;
+		text-shadow: 0 0 0 transparent;
 
-	border: 1px solid rgba($color__deephouse,.2);
-	border-bottom-width: 3px;
-	border-radius: 3px;
-	background: $color__boujieseafoam;
-	
-	@extend %heading3;
-	color: rgba($color__deephouse,.7);
+		border-style: solid;
+		border-width: 1px 1px 3px;
+		border-color: $color__border-button;
+		border-radius: 3px;
+		background: $color__background-button;
+		
+		padding: ms(-1) ms(1);
 
-	@include transition(all 0.4s ease-in-out);
-	&:hover {
-		background: $color__strawberryrealness;	
 		@include transition(all 0.2s ease-in-out);
-	}
-	&:active{
-		background: $color__boujieseafoam;
-		border-color: rgba($color__deephouse,.1);
-		@include transition(all 0.2s ease-in-out);
-	}
-	&:focus {
-		outline: none;
-		box-shadow: 0 0 2px 5px rgba($color__boujieseafoam,.3);
+		
+		&:hover {
+			background: $color__background-button-hover;
+			border-color: $color__border-button-hover;
+			color: $color__text-button-hover;
+			text-shadow: 0 1px 1px $color__textshadow-button-hover;
+			@include transition(all 0.15s ease-in-out);
+		}
+
+		&:active {
+			background: $color__background-button-focus;
+			border-color: $color__border-button-focus;
+			border-width: 3px 1px 1px;
+		}
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 1px 4px $color__outilne-button-focus;
+			@include transition(all 0.15s ease-in-out);
+		}
 	}
 }

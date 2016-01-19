@@ -1,0 +1,35 @@
+.widget {
+
+    div {
+        font-size: ms(-1);
+    }
+
+	/* Make sure select elements fit in widgets. */
+	select, input {
+		max-width: 100%;
+	}
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a:hover {
+        color: $color__link-secondary-hover;
+    }
+
+    @include respondTo(upto-narrow) {
+        padding: ms(2) 0;
+    }
+}
+
+/* Search widget. */
+.widget_search {
+    .search-field {
+        width: 100%;
+    }
+    .search-submit {
+	   display: none;
+    }
+}

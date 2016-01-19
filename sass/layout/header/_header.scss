@@ -1,0 +1,66 @@
+.site-header {
+    background: $color__background-header;
+    padding: ms(4) ms(4) ms(2);
+    text-align: center;
+    @include respondTo(atleast-extra-wide) {
+        margin: 0 0 ms(4);
+    }
+}
+
+.site-branding {
+    max-width: ms(19);
+    margin: 0 auto;
+    @include animation(fadein 1s ease-out 0s backwards); //Fade-in
+    @include transition(all 0.5s ease-in-out);
+
+    h1 {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 250px;
+        letter-spacing: ms(-15);
+        margin: 0 auto ms(0);        
+        background: url('images/thefivethemes-logo-large.svg') no-repeat center bottom;
+        @include transition-property(transform);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        &:hover {
+            @include transform(scale(1.03) translateY(-3px));
+            @include transition-property(transform);
+            @include transition-duration(0.1s);
+            @include transition-timing-function(ease-out);
+            // color: $color__link-header-hover;
+        }
+
+        a {
+            display: block;
+            text-indent: -9999px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            // color: $color__link-header;
+            // text-decoration: none;
+        }
+
+
+    }
+    h2 {
+        font-size: ms(-2);
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: ms(-12);
+        margin: 0;
+        color: rgba(white,.4);
+    }
+
+    @include respondTo(upto-medium) {
+        @include transition(all 0.5s ease-in-out);
+    }
+}

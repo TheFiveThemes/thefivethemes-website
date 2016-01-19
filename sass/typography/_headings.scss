@@ -1,48 +1,81 @@
+%heading-base {
+    font-family: $font__headings;
+    font-size: ms(0);
+    font-weight: 700;
+    text-transform: uppercase;
+    clear: both;
+    line-height: 1;
+    color: $color__headings;
+    @include respondTo(upto-narrow) {
+        word-wrap: break-word;
+    }
+    @include respondTo(atleast-ultra-wide) {
+        font-size: ms(2);
+    }
+}
+
+// Implementations
+
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
-    text-transform: uppercase;
-    line-height: 1;
-    color: rgba($color__deephouse,.7);
+    @extend %heading-base;
+    @include respondTo(upto-narrow) {
+        word-wrap: break-word;
+    }
 }
 
-h1 {
-    @include font-size(1.688);
-    letter-spacing: 0.054em;
+.site-main {
+    h1 {
+        font-size: ms(5);
+        @include respondTo(upto-narrow) {
+            font-size: ms(3);
+        }
+    }
+    h2 {
+        font-size: ms(4);
+        @include respondTo(upto-narrow) {
+            font-size: ms(2);
+        }
+    }
+    h3 {
+        font-size: ms(1);
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: ms(-15);
+        @include respondTo(upto-narrow) {
+            font-size: ms(1);
+        }
+    }
+    h4 {
+        font-size: ms(0);
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: ms(-12);
+    }
+
+    h5 {
+        font-size: ms(-1);
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: ms(-12);
+    }
+
+    h6 {
+        font-size: ms(-2);
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: ms(-10);
+    }
 }
 
-h2 {
-    @include font-size(1.125);
-    letter-spacing: 0.060em;
-}
-
-h3 {
-    @include font-size(1);
-    letter-spacing: 0.081em;
-}
-
-h4 {
-    @include font-size(0.75);
-    letter-spacing: 0.091em;
-    color: rgba($color__silverclouds,.5);
-}
-
-%heading3 {
-    @include font-size(1);
-    letter-spacing: 0.081em;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-%heading4 {
-    @include font-size(0.75);
-    letter-spacing: 0.091em;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-.grid h1 {
-    margin: 0 0 .1em;
-}
-.grid h4 {
-    margin: 0;
+.widget-area {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        color: $color__text-secondary;
+    }
+    h2 {
+        font-family: $font__main;
+        font-size: ms(-2);
+        text-transform: uppercase;
+        letter-spacing: ms(-12);
+    }
 }

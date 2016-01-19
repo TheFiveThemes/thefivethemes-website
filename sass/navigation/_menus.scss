@@ -1,107 +1,110 @@
+.nav-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .main-navigation {
-	// clear: both;
-	// display: block;
-	//float: left;
-	width: 100%;
-	text-align: center;
-	@include clearfix();
+    max-width: ms(19);
+    padding: 0;  
+    margin: 0 auto;
+    @include text-format(heading-small);
+    font-weight: 700;
+    h2 {
+        display: none;
+    }
 
-	ul {
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+    ul, 
+    ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 1.5em;
-			left: -999em;
-			z-index: 99999;
+    .sub-menu { 
+        padding-left: ms(0);
+        border-left: 2px solid $color__border-sidebar-navigation;
+        a {
+            font-size: ms(0);
+            opacity: .6;
+            padding: ms(0) 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    } 
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a {
-			}
-
-			a:hover {
-			}
-		}
-
-		li:hover > ul {
-			left: auto;
-		}
-	}
-	li {
-		// float: left;
-		// position: relative;
-		display: inline-block;
-		margin: 0 0.1em;
-		padding: 0.5em;
-		&:hover > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item,
-	.current-menu-item,
-	.current_page_ancestor {
-		box-shadow: 0 2px 0 rgba($color__deephouse,.3);
-		& > a {
-			color: rgba($color__deephouse,.5);
-		}
-	}
+    a {
+        display: block;
+        padding: ms(2);
+        color: $color__link-header;
+        font-size: ms(1);
+        line-height: 1;
+        text-decoration: none;
+        &:hover {
+            color: $color__link-header-hover;
+        }
+    }
 }
 
-/* Small menu. */
-.menu-toggle {
-	display: none;
+.social-navigation {
+    display: none; // temporary
 }
 
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
 
-	.main-navigation ul {
-		display: none;
-	}
+
+// Post Navigation
+
+.posts-navigation {
+    a:hover {
+        background: $color__background-secondary;
+    }
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-	
-	.site-main & {
-		margin: 0 0 3.375em;
-		overflow: hidden;
-	}
+    & .nav-previous,
+    & .nav-next {
+        a {
+            display: inline-block;
+            text-decoration: none;
+            @include text-format(heading-small);
+        }
+    }
+    & .nav-previous,
+    & .nav-next {
+        width: 50%;
+    }
+    & .nav-previous {
+        float: left;
+    }
+    & .nav-next {
+        float: right;
+        text-align: right;
+    }
+}
 
-	& .nav-previous {
-		float: left;
-		width: 50%;
-	}
+.comment-navigation,
+.post-navigation {
+    .site-main & {
+        margin: 0 0 1.5em;
+        overflow: hidden;
+    }
+    & .nav-next {
+        text-align: right;
+    }
+}
 
-	& .nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+.posts-navigation {
+    & .nav-previous {
+        padding-right: 1em;
+        text-align: right;
+    }
+    & .nav-next {
+        padding-left: 1em;
+        text-align: left;
+    }
 }

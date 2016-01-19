@@ -1,0 +1,12 @@
+/* 
+**  Sidebar Toggle 
+*/
+
+.menu-toggle {
+	.no-js & {
+		display: none;
+	}
+	@include respondTo(atleast-narrow) {
+		display: none;
+	}
+}

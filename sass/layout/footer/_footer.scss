@@ -1,0 +1,31 @@
+.site-footer {
+    padding: ms(4);
+    text-align: center;
+    background: $color__background-footer;
+    color: $color__text-footer;
+
+    @include respondTo(atleast-extra-wide) {
+        margin: ms(4) 0;
+        padding: ms(4);
+    }
+
+    .site-info {
+        max-width: ms(19);
+        margin: 0 auto;
+        padding: ms(2) 0;
+        p {
+            text-transform: uppercase;
+            font-size: ms(-3);
+            letter-spacing: ms(-12);
+        }
+    }
+
+    a {
+        display: inline-block;
+        color: $color__link-footer;
+        text-decoration: none;
+        &:hover {
+            color: $color__link-footer-hover;
+        }            
+    }
+}

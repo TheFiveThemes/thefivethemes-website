@@ -1,8 +1,8 @@
 <?php
 /**
- * The Five Themes Theme Customizer
+ * The Five Themes Theme Customizer.
  *
- * @package The Five Themes
+ * @package The_Five_Themes
  */
 
 /**
